@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/******************************************/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-color: #14bdac;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+}
+
+/******************************************/
+header {
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*****************************************/
+main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 1.5rem;
+}
+main .start-game {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+}
+main .start-game div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+main .start-game .player label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+main .start-game .player input{
+    width: 100%;
+    height: 27px;
+    border: none;
+    border-radius: 10px;
+}
+main .start-game .player input:focus {
+    outline: none;
+}
+main .start-game div button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    border: none;
+    background-color:#004942;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-self: center;
+}
+main .start-game div button:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+main .playerDetails {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-weight: bold;
+    gap: 1.5rem;
+}
+main .gameBoard {
+    width: 25rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main .gameBoard div {
+    border: 2px solid black;
+}
+main .gameBoard div:nth-child(1) {
+    border-left: none;
+    border-top: none;
+}
+main .gameBoard div:nth-child(2) {
+    border-top: none;
+}
+main .gameBoard div:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+main .gameBoard div:nth-child(4) {
+    border-left: none;
+}
+main .gameBoard div:nth-child(6) {
+    border-right: none;
+}
+main .gameBoard div:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+main .gameBoard div:nth-child(8) {
+    border-bottom: none;
+}
+main .gameBoard div:nth-child(9) {
+    border-right: none;
+    border-bottom: none;
+}
+
+main .gameButtons {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .gameButtons .playAgain {
+    padding: 0.3rem 1.2rem;
+    border-radius: 15px;
+    border: none;
+    background-color:#004942;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-self: center;
+}
+main .gameButtons .restart {
+    padding: 0.3rem 1.2rem;
+    border-radius: 15px;
+    border: none;
+    background-color:#a7005c;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-self: center;
+}
+/*****************************************/
+footer {
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+footer p:last-child{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
