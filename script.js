@@ -45,6 +45,7 @@ function renderGameBoard() {
 
     for (let i = 0; i < 9; i++) {
         let div = document.createElement('div');
+        div.classList.add(`div${i+1}`);
         gameBoard.appendChild(div);
     }
 
