@@ -9,7 +9,7 @@ body {
     font-family: 'Rubik', sans-serif;
     background-color: #ffffff;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-rows: 120px 1fr;
 }
 
 /******************************************/
@@ -26,7 +26,6 @@ main {
     display: grid;
     justify-content: center;
     align-content: center;
-    gap: 1.5rem;
 }
 main .start-game {
     border: none;
@@ -45,7 +44,7 @@ main .start-game .player label {
 }
 main .start-game .player input{
     width: 100%;
-    height: 27px;
+    height: 2rem;
     border: 0.3px solid black;
     border-radius: 10px;
 }
